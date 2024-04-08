@@ -73,8 +73,6 @@ export default function DashUsers() {
               <Table.HeadCell>User image</Table.HeadCell>
               <Table.HeadCell>Username</Table.HeadCell>
               <Table.HeadCell>Email</Table.HeadCell>
-              <Table.HeadCell>Admin</Table.HeadCell>
-              <Table.HeadCell>Delete</Table.HeadCell>
             </Table.Head>
             {users.map((user) => (
               <Table.Body className='divide-y' key={user._id}>
@@ -91,24 +89,6 @@ export default function DashUsers() {
                   </Table.Cell>
                   <Table.Cell>{user.username}</Table.Cell>
                   <Table.Cell>{user.email}</Table.Cell>
-                  <Table.Cell>
-                    {user.isAdmin ? (
-                      <FaCheck className='text-green-500' />
-                    ) : (
-                      <FaTimes className='text-red-500' />
-                    )}
-                  </Table.Cell>
-                  <Table.Cell>
-                    <span
-                      onClick={() => {
-                        setShowModal(true);
-                        setUserIdToDelete(user._id);
-                      }}
-                      className='font-medium text-red-500 hover:underline cursor-pointer'
-                    >
-                      Delete
-                    </span>
-                  </Table.Cell>
                 </Table.Row>
               </Table.Body>
             ))}
@@ -132,7 +112,7 @@ export default function DashUsers() {
         size='md'
       >
         <Modal.Header />
-        <Modal.Body>
+        {/* <Modal.Body>
           <div className='text-center'>
             <HiOutlineExclamationCircle className='h-14 w-14 text-gray-400 dark:text-gray-200 mb-4 mx-auto' />
             <h3 className='mb-5 text-lg text-gray-500 dark:text-gray-400'>
@@ -147,7 +127,7 @@ export default function DashUsers() {
               </Button>
             </div>
           </div>
-        </Modal.Body>
+        </Modal.Body> */}
       </Modal>
     </div>
   );

@@ -1,7 +1,7 @@
 import { Footer } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import { BsLinkedin, BsInstagram, BsTwitter, BsGithub } from 'react-icons/bs';
-import { SiLeetcode } from "react-icons/si";
+
 export default function FooterCom() {
   return (
     <Footer container className='border border-t-8 border-teal-500'>
@@ -12,10 +12,10 @@ export default function FooterCom() {
               to='/'
               className='self-center whitespace-nowrap text-lg sm:text-xl font-semibold dark:text-white'
             >
-              <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
-                Shankar's
+              <span className='px-2 py-1 bg-gradient-to-r from-green-600 to-gray-900 rounded-lg text-white'>
+                Enigma's
               </span>
-              Blog
+              Task
             </Link>
           </div>
           <div className='grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 sm:gap-6'>
@@ -34,7 +34,7 @@ export default function FooterCom() {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Shankar's Blog
+                  Enigma's Task
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
@@ -52,20 +52,13 @@ export default function FooterCom() {
                   rel='noopener noreferrer'>Linkedin</Footer.Link>
               </Footer.LinkGroup>
             </div>
-            <div>
-              <Footer.Title title='Legal' />
-              <Footer.LinkGroup col>
-                <Footer.Link href='#'>Privacy Policy</Footer.Link>
-                <Footer.Link href='#'>Terms &amp; Conditions</Footer.Link>
-              </Footer.LinkGroup>
-            </div>
           </div>
         </div>
         <Footer.Divider />
         <div className='w-full sm:flex sm:items-center sm:justify-between'>
           <Footer.Copyright
             href='#'
-            by="Shankar's blog"
+            by="Enigma's Task"
             year={new Date().getFullYear()}
           />
           <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
@@ -73,7 +66,6 @@ export default function FooterCom() {
             <Footer.Icon href='https://www.instagram.com/0_shankar7?igsh=MmM4NnUyOWttNTNp' icon={BsInstagram} />
             <Footer.Icon href='https://twitter.com/shankarnanda26' icon={BsTwitter} />
             <Footer.Icon href='https://github.com/Shankar009378' icon={BsGithub} />
-            <Footer.Icon href='https://leetcode.com/Shankar_07/' icon={SiLeetcode} />
           </div>
         </div>
       </div>

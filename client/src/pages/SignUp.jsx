@@ -43,10 +43,10 @@ export default function SignUp() {
         {/* left */}
         <div className='flex-1'>
           <Link to='/' className='font-bold dark:text-white text-4xl'>
-            <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white'>
-              Shankar's
+            <span className='px-2 py-1 bg-gradient-to-r from-green-600 to-gray-900 rounded-lg text-white'>
+              Enigma's
             </span>
-            Blog
+            Task
           </Link>
           <p className='text-sm mt-5'>
             Sign in with your E-mail and Password
@@ -85,7 +85,7 @@ export default function SignUp() {
               />
             </div>
             <Button
-              gradientDuoTone='purpleToPink'
+              className='bg-gradient-to-r from-green-500 to-black text-white border-green-500 hover:bg-black hover:text-white hover:border-black'
               type='submit'
               disabled={loading}
             >
@@ -102,7 +102,7 @@ export default function SignUp() {
           </form>
           <div className='flex gap-2 text-sm mt-5'>
             <span>Have an account?</span>
-            <Link to='/sign-in' className='text-blue-500'>
+            <Link to='/sign-in' className='text-green-500'>
               Sign In
             </Link>
           </div>
