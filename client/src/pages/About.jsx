@@ -27,6 +27,7 @@ export default function About() {
             <p>
               Thank you for being a valuable user of this task.🌐💡Your engagement contributes to the collaborative spirit that drives learning and innovation in any field.🙌👨‍💻 Happy coding!🚀👩‍💻
             </p>
+            
           </div>
         </div>
       </div>
