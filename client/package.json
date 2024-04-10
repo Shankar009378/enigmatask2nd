@@ -3,6 +3,15 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": ["dist"],
+  "main": "./dist/client.umd.cjs",
+  "module": "./dist/client.js",
+  "exports": {
+    ".": {
+      "import": "./dist/client.js",
+      "require": "./dist/client.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
